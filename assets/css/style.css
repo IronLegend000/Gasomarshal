@@ -1,0 +1,744 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+/*import fonts from google*/
+/*Importamos las fuentes de google para usarlos en la página*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif; /*Declaramos que la fuente montserrat será para todo el contenido de body*/
+  margin: 0;
+  padding: 0;
+  background-image: url(https://sukha-mailing.s3.amazonaws.com/mailing_images/fondo.jpg); /*Subi la imagen a aws amazon, por eso contiene este link
+  */
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3b8af2;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid green;
+  border-top-color: #e2eefd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: black; /*Declaramos el color del header */
+  transition: all 0.5s; /*La transición sirve para cuando pasamos el mouse arriba de algun item se vea de una forma natural hover, más que nada es una animación */
+  z-index: 997; /* controla el orden de apilamiento vertical de los elementos que se superponen*/
+  height: 86px; /*Establecemos una altura basandonos en el diseño*/
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); /*Asignamos un efecto de sombre alrededor del header*/
+}
+#header.fixed-top {
+  /*asignamos un valor de altura para cuando el usuario haga scroll el header se mantega de manera static*/
+  height: 80px;
+}
+
+#header .logo img {
+  /*Establecemos una altura max al logo*/
+  max-height: 40px;
+}
+
+.scrolled-offset {
+  margin-top: 70px; /*Asignamos un margen en la parte superior de 70px*/
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0; /*quitamos los paddings preeestablecidos con el valor 0*/
+}
+.navbar ul {
+  /*modificamos los valores por defectos al crear una lista*/
+  margin: 0; /*Nos deshacemos de los margenes*/
+  padding: 0; /*Nos deshacemos de los paddings*/
+  display: flex; /*Otorgamos la capacidad de mostrarse flexible para alterar sus dimensiones */
+  list-style: none; /*Quitamos los circulos que aparecen al principio que creamos una lista*/
+  align-items: center; /*Alineamos los elementos al centro*/
+}
+.navbar li {
+  position: relative; /*Otorgramos una posición relativa a los li de la lista, basicamente se adapta al flujo normal del documento*/
+}
+.navbar > ul > li {
+  white-space: nowrap; /*Nos deshacemos del espacio otorgado autmaticamente para entender más este concepto
+  https://developer.mozilla.org/es/docs/Web/CSS/white-space*/
+  padding: 10px 0 10px 28px; /*Aplicamos paddings alrededor de los items, 
+  /*  arriba    10px  padding  */
+  /*  derecha  0px  padding  */
+  /*  abajo 10px padding  */
+  /*  izquierda   28px  padding
+ ¿Qué es un padding? es lo que hay de espacio en una caja, no fuera dentro de
+ para mas información checa este link
+ https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/modelo-caja-css-t1.jpg*/
+}
+.navbar a,
+.navbar a:focus {
+  /*Modificamos ahora si los navlinks, el como se ven, por ejemplo las letras de HOME teniendo en cuenta
+  que la clase es navbar y afectamos el elemento <a href="">Home</a>*/
+  display: flex; /*Otorgamos la flexibilidad nuevamente para afectar la posición de los elementos*/
+  align-items: center; /*Alineamos al centro*/
+  justify-content: center; /* justify-content: space-between;
+  --------creara un un espacio igual entre los elementos no alrededor de ellos.*/
+  padding: 0 3px; /* padding para arriba y abajo, 0px de padding */
+  /* izquierda y derecha, 3px de padding */
+  font-size: 15px; /* tamaño de la fuente, mismo contexto como cuando agrandas la fuente en word*/
+  font-weight: 600; /*  Grosor de las letras como negrita, semi bold take a look a este link http://www.asmarterwaytolearn.com/pro-html-css/images/illus-expert-font-weight-control-2.png
+    pero mira los links*/
+  color: white; /*Color para el texto es blanco ya que el fondo del header es negro*/
+  white-space: nowrap; /*Quitamos nuevamente el espacio en blanco predertemindo y los dejamos juntos para tener
+  medidas precisas;)*/
+  transition: 0.3s; /*Animación de 0.3s take a look 
+  https://developer.mozilla.org/es/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions*/
+  position: relative; /*Otorgamos la posición relativa*/
+}
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: green;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before,
+.navbar li:hover > a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  color: white;
+}
+
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #222222;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(9, 9, 9, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  overflow-y: auto;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-mobile > ul > li {
+  padding: 0;
+}
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover > a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
+}
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
+  color: #82b71d;
+}
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%; /*Otorgramos un ancho del 100% en la pantalla de cualquier dispositivo*/
+  height: 100vh; /*Sirve para que se adapte completamente a la altura de cualquier pantalla*/
+  background: url("../img/hero-bg.png") top left; /*Buscamos la imagen de fondo para ponerla de background en tu hero*/
+  max-width: 100%;
+  height: auto; /*Damos la opción que funcione como portada 
+  cover Escala la imagen al mayor tamaño posible sin estirarla. 
+  Si las proporciones de la imagen difieren de las del elemento, 
+  es recortada vertical u horizontalmente para que no quede un espacio vacío.*/
+  position: relative; /*take a look https://www.w3schools.com/css/css_positioning.asp*/
+  background-repeat: no-repeat;
+}
+#hero:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#hero .container {
+  position: relative;
+}
+#hero h1 {
+  font-size: 50px; /*tamaño de la fuente más grande H1, 50px basado en el tamaño de tu diseño*/
+  font-weight: 700; /*Bold es el grosor de la letras take a look http://www.asmarterwaytolearn.com/pro-html-css/images/illus-expert-font-weight-control-2.png*/
+  color: white; /*color blanco a tu text*/
+  text-shadow: 1px 1px 2px black;
+}
+
+.btn-facturacion {
+  background-color: #b5fa43;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+}
+
+#hero h3 {
+  font-size: 36px; /*Tamaño de tu fuente*/
+  color: white; /*color blanco a tu text*/
+  font-weight: 600; /*Semi-bold grosor de la letra*/
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 18px;
+    text-shadow: none;
+    text-align: center;
+    line-height: 2rem;
+  }
+  #hero h3 {
+    display: none;
+  }
+  #hero .btn-facturacion {
+    display: none;
+  }
+}
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+/*wrap generá automáticamente filas*/
+/*nowrap es la forma default si el contenedor es menor que los items, 
+    los items se desbordan*/
+
+/*flex-flow es la combinación de flex-direction y flex-wrap*/
+/*
+    flex-direction: row;
+    flex-direction: row-reverse*/
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  margin: 30px;
+}
+.section-title h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  padding: 8px 20px;
+  margin: 0;
+  background: #82b71d;
+  color: white;
+  display: inline-block;
+  white-space: pre;
+}
+.section-title h3 {
+  margin: 15px 0 0 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about .content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+.about .content ul li:first-child {
+  margin-top: 35px;
+}
+.about .content ul i {
+  background: #fff;
+  box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+  font-size: 24px;
+  padding: 20px;
+  margin-right: 15px;
+  color: #82b71d;
+  border-radius: 50px;
+}
+.about .content ul h5 {
+  font-size: 18px;
+  color: #555555;
+}
+.about .content ul p {
+  font-size: 15px;
+}
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  color: white;
+  border-radius: 72px;
+  display: flex;
+  padding: 20px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  transition: ease-in-out 0.3s;
+  justify-content: center;
+}
+.services img {
+  height: 150px;
+}
+.services p {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  #services .icon-box {
+    background-color: transparent;
+  }
+  #services p {
+    font-size: 15px;
+    margin: 0px;
+  }
+}
+
+.additionals {
+  background-color: rgba(181, 250, 67, 0.5);
+  margin-bottom: 6.25rem;
+  margin-top: 3.125rem;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 60px;
+}
+.additionals img {
+  width: 200px;
+}
+
+.additionals-services .icon-box {
+  text-align: center;
+  padding: 80px 20px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 20px;
+  background-color: rgb(22, 21, 21);
+}
+.additionals-services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: #f1f6fe;
+  border-radius: 50%;
+  border: 1px solid #deebfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+.additionals-services .icon-box .icon i {
+  color: #82b71d;
+  font-size: 28px;
+  transition: ease-in-out 0.3s;
+}
+.additionals-services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.additionals-services .icon-box h4 {
+  color: white;
+}
+.additionals-services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: white;
+}
+.additionals-services .icon-box:hover {
+  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+}
+.additionals-services .icon-box:hover h4,
+.services .icon-box:hover .icon i {
+  color: #82b71d;
+}
+.additionals-services .icon-box:hover .icon {
+  border-color: #82b71d;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.section-title-contact {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title-contact h2 {
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  color: white;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  #contact .section-title-contact h2 {
+    font-size: 30px;
+  }
+}
+
+  .section-title-contact h3 span {
+    color: white;
+  }
+
+  .contact {
+    background-image: url(../img/image.png);
+  }
+  .contact .info-box {
+    color: #82b71d;
+    text-align: center;
+    padding: 20px 0 30px 0;
+    background: rgb(31, 27, 27);
+  }
+  .contact .info-box i {
+    font-size: 32px;
+    color: #82b71d;
+    border-radius: 50%;
+    padding: 8px;
+  }
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: #fcf7f7;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  .contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .contact .php-email-form .form-group {
+    margin-bottom: 20px;
+  }
+  .contact .php-email-form input,
+  .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  .contact .php-email-form input:focus,
+  .contact .php-email-form textarea:focus {
+    border-color: #82b71d;
+  }
+  .contact .php-email-form input {
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  .contact .php-email-form textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+  }
+  .contact .php-email-form button[type="submit"] {
+    background: white;
+    border: 0;
+    padding: 10px 30px;
+    color: #82b71d;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  .contact .php-email-form button[type="submit"]:hover {
+    background: #82b71d;
+    color: white;
+  }
+
+  /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+  #footer {
+    padding: 0 0 30px 0;
+    color: white;
+    font-size: 14px;
+    background: black;
+  }
+
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: black;
+  }
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-contact h3 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #82b71d;
+    font-size: 18px;
+    line-height: 1;
+  }
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  #footer .footer-top .footer-links ul a {
+    color: #777777;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #82b71d;
+  }
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #82b71d;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 4px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  #footer .footer-top .social-links a:hover {
+    background: #82b71d;
+    color: #fff;
+    text-decoration: none;
+  }
+  #footer .copyright {
+    text-align: center;
+    float: left;
+  }
+  #footer .credits {
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    color: #444444;
+  }
+  .copyright span {
+    color: #82b71d;
+  }
+  .credits a {
+    color: #82b71d;
+  }
+  @media (max-width: 768px) {
+    #footer .copyright,
+    #footer .credits {
+      float: none;
+      text-align: center;
+      padding: 2px 0;
+    }
+  }
+
+
+.clients .box{
+  background-color: white;
+  width: 21.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15.625rem;
+  border-radius: 1.875rem;
+  margin: 1.875rem;
+}
+
+
