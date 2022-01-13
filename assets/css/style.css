@@ -281,52 +281,9 @@ a:hover {
 # Hero Section
 --------------------------------------------------------------*/
 
-#hero h1 {
-  font-size: 50px; /*tamaño de la fuente más grande H1, 50px basado en el tamaño de tu diseño*/
-  font-weight: 700; /*Bold es el grosor de la letras take a look http://www.asmarterwaytolearn.com/pro-html-css/images/illus-expert-font-weight-control-2.png*/
-  color: white; /*color blanco a tu text*/
-}
 
-.btn-facturacion {
-  background-color: #b5fa43;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 700;
-  position: absolute;
-}
 
-#hero h3 {
-  font-size: 36px; /*Tamaño de tu fuente*/
-  color: white; /*color blanco a tu text*/
-  font-weight: 600; /*Semi-bold grosor de la letra*/
-}
 
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 18px;
-    text-shadow: none;
-    text-align: center;
-    line-height: 2rem;
-  }
-  #hero h3 {
-    display: none;
-  }
-  #hero .btn-facturacion {
-    display: none;
-  }
-}
-@media (max-height: 500px) {
-  #hero {
-    height: 120vh;
-  }
-}
 
 /*wrap generá automáticamente filas*/
 /*nowrap es la forma default si el contenedor es menor que los items, 
@@ -731,7 +688,9 @@ section {
 }
 
 .box img{
+  
   height: 150px;
+  
 }
 
 .title h1{
@@ -767,6 +726,33 @@ section {
   font-size: 54px;
   font-weight: 800;
   text-shadow: 1px 1px 2px black;
-
-
 }
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .carousel-item img{
+    height: 400px;
+    }
+    
+    .carousel-caption p {
+    font-size: 20px ;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+
+
+    }
+    .carousel-caption h1{
+      text-align: center;
+      font-weight: 800;
+      text-shadow: 1px 1px 2px black;
+
+    }
+ 
+}
+
+
+ 
