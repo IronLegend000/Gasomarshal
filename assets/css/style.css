@@ -750,12 +750,22 @@ section {
   align-items: center;
   justify-content: center;
   padding: 30px;
-  
-
-
 
 }
 
 .box img{
   height: 150px;
+}
+
+.title h1{
+   color: white;
+   text-align: center;
+   font-weight: 700;
+   font-size: 54px;
+}
+
+.img-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
