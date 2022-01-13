@@ -20,8 +20,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css
-  ">
+  <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+
+  
   <!--Importar los iconos de las redes sociales-->
 
 
@@ -65,22 +66,40 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-
-  <!--En esta sección se crea el hero, junto con el texto que cuenta con la sección-->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <br>
-      <br>
-      <br><br>
-      <br><br>
-      <h3>Bienvenido a Gasomarshal</h3>
-      <h1>Especializados en el <br>
-        desarrollo e integración de <br> tecnologías y servicios <br> para el sector gasolinero.</h1>
-
-
-
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/hero/hero-bg.png" height="600px" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/hero/gas.jpg"  height="600px"alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/hero/coding.jpg"  height="600px" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="assets/img/hero/office space.jpg"  height="600px" alt="Fourth slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/hero/pemex size.jpg"  height="600px" alt="Fifth slide">
     </div>
-  </section><!-- End Hero -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+</div>
+ 
+
 
 
   <main id="main">
@@ -462,12 +481,16 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
