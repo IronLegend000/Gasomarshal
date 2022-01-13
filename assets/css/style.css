@@ -280,34 +280,11 @@ a:hover {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
-  width: 100%; /*Otorgramos un ancho del 100% en la pantalla de cualquier dispositivo*/
-  height: 100vh; /*Sirve para que se adapte completamente a la altura de cualquier pantalla*/
-  background: url("../img/hero-bg.png") top left; /*Buscamos la imagen de fondo para ponerla de background en tu hero*/
-  max-width: 100%;
-  height: auto; /*Damos la opción que funcione como portada 
-  cover Escala la imagen al mayor tamaño posible sin estirarla. 
-  Si las proporciones de la imagen difieren de las del elemento, 
-  es recortada vertical u horizontalmente para que no quede un espacio vacío.*/
-  position: relative; /*take a look https://www.w3schools.com/css/css_positioning.asp*/
-  background-repeat: no-repeat;
-}
-#hero:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-#hero .container {
-  position: relative;
-}
+
 #hero h1 {
   font-size: 50px; /*tamaño de la fuente más grande H1, 50px basado en el tamaño de tu diseño*/
   font-weight: 700; /*Bold es el grosor de la letras take a look http://www.asmarterwaytolearn.com/pro-html-css/images/illus-expert-font-weight-control-2.png*/
   color: white; /*color blanco a tu text*/
-  text-shadow: 1px 1px 2px black;
 }
 
 .btn-facturacion {
@@ -768,4 +745,28 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+.carousel-caption {
+  display: inline;
+
+
+}
+
+.carousel-caption h1 {
+  font-size: 36px;
+  font-weight: 400;
+  float: left;
+  text-shadow: 1px 1px 2px black;
+
+}
+.carousel-caption p {
+  float: left;
+  text-align: left;
+  font-size: 54px;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px black;
+
+
 }
