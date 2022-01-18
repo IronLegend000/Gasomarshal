@@ -756,8 +756,30 @@ section {
     .gasomarshal{
       display: none;
     }
+    .btn-success{
+      display: none;
+    }
  
 }
+
+.btn-billing{
+  position: absolute;
+  top: 650px;
+  padding: 15px 30px;
+  left: 240px;
+  background-color: #B5FA43;
+  border: none;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+  border-radius: 4px;
+
+}
+.btn-billing:hover{
+  background-color: #B5FA43;
+  color: #222222;
+}
+
 
 
  
