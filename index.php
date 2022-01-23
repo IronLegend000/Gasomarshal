@@ -50,9 +50,9 @@
           home -->
 
           <li><a class="nav-link scrollto active" href="#header">Home</a></li>
-          <li><a class="nav-link scrollto" href="#">Facturación</a></li>
+          <li><a class="nav-link scrollto" href="http://facturaweb.gasomarshal.biz:8080/#/">Facturación</a></li>
           <li><a class="nav-link scrollto" href="#clients">Clientes</a></li>
-          <li><a class="nav-link scrollto " href="#">Software</a></li>
+          <li><a class="nav-link scrollto " href="#software">Software</a></li>
           <li><a class="nav-link scrollto" href="#services">Hardware</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
         </ul>
@@ -104,7 +104,7 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-caption">
-          
+
           <p>Conviértete en uno de nuestros clientes clave.</p>
         </div>
         <img class="d-block w-100" src="assets/img/hero/pemex size.jpg" height="600px" alt="Fifth slide">
@@ -120,7 +120,8 @@
     </a>
   </div>
   <div class="btn-fact">
-    <button type="button" class="btn btn-success btn-billing">Factura aquí!</button>
+    <a href="http://facturaweb.gasomarshal.biz:8080/#/">    <button type="button" class="btn btn-success btn-billing">Factura aquí!</button>
+    </a>
 
   </div>
 
@@ -192,7 +193,8 @@
           </div>
         </div>
         <div class="section-title">
-          <h2>Preciadores Electrónicos y Consola para Tanques</h2>
+          <h2>Preciadores Electrónicos </h2>
+          <h2> Consola para Tanques</h2>
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
@@ -211,6 +213,25 @@
 
         </div>
     </section><!-- End Services Section -->
+
+    <!--Software sections-->
+    <section id="software" class="software">
+      <div class="container">
+        <img src="assets/img/software/Group 17.png" class="img" alt="" srcset="">
+        <div class="row">
+          <div class="col d-flex justify-content-center align-items-center">
+            <img src="assets/img/software/software-package.png" alt="">
+          </div>
+            <div class="col ">
+              <h1>Suite de software para gasolineras</h1>
+              <p>Compatibles con las principales marcas de Dispensarios TEAM®, Bennett®, Gilbarco®, Wayne®; Consolas de
+                Tanques VR®, INCON®, OPW®, FAFNIR®; y Preciadores Electrónicos PWM®, ABLE®, LYNXIS®.</p>
+            </div>
+        </div>
+      </div>
+
+    </section>
+    <!--end Software sections-->
 
 
 
