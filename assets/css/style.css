@@ -796,3 +796,35 @@ section {
   padding: 20px;
   width: 200px;
 }
+
+ .software-features{
+  background-color: rgba(208, 235, 160, 0.644) ;
+  margin: 30px;
+  border-radius: 100px;
+
+
+ }
+.software-features .box{
+  padding: 30px;
+  text-align: center;
+ 
+}
+.software-features .features {
+  height: 60px;
+}
+.software-features h3{
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.software-features p{
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.software-features .main_image{
+  width: 105px;
+  height: 89px;
+}
