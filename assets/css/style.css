@@ -2,26 +2,32 @@
 # General
 --------------------------------------------------------------*/
 
+
+:root {
+  --dark-color: #000;
+  --light-color: #fff;
+  --dark-green:#245019;
+  --medium-green:#B5FA43;
+  --light-green:#CFEBA0;
+  --dark-brown: #7B8726;
+  
+
+}
+
 /*import fonts from google*/
 /*Importamos las fuentes de google para usarlos en la página*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
-  font-family: "Montserrat", sans-serif; /*Declaramos que la fuente montserrat será para todo el contenido de body*/
+*{
   margin: 0;
   padding: 0;
-  background-image: url(https://sukha-mailing.s3.amazonaws.com/mailing_images/fondo.jpg); /*Subi la imagen a aws amazon, por eso contiene este link
-  */
+  box-sizing: border-box;
+
+}
+body {
+  font-family: "Montserrat", sans-serif; /*Declaramos que la fuente montserrat será para todo el contenido de body*/
+  background-image: url(https://sukha-mailing.s3.amazonaws.com/mailing_images/fondo.jpg); /*Subi la imagen a aws amazon, por eso contiene este link*/
   background-repeat: repeat;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #3b8af2;
-  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -35,7 +41,7 @@ a:hover {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--light-color);
 }
 
 #preloader:before {
@@ -44,7 +50,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid green;
-  border-top-color: #e2eefd;
+  border-top-color: var(--light-color);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -725,7 +731,7 @@ section {
   margin-bottom: 100px;
   font-size: 45px;
   font-weight: 800;
-  text-shadow: 2px 3px 2px black;
+  text-shadow: 2px 3px 2px var(--dark-color);
 }
 
 
@@ -742,7 +748,7 @@ section {
     font-size: 20px ;
     text-align: left;
     margin: 0;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px var(--dark-color);
 
 
     }
@@ -750,7 +756,7 @@ section {
       margin-top: 90px;
       text-align: left;
       font-weight: 800;
-      text-shadow: 1px 1px 2px black;
+      text-shadow: 1px 1px 2px var(--dark-color);
 
     }
     .gasomarshal{
@@ -767,7 +773,7 @@ section {
   top: 650px;
   padding: 15px 30px;
   left: 240px;
-  background-color: #B5FA43;
+  background-color: var(--medium-green);
   border: none;
   color: white;
   font-weight: 600;
@@ -776,7 +782,7 @@ section {
 
 }
 .btn-billing:hover{
-  background-color: #B5FA43;
+  background-color: var(--medium-green);
   color: #222222;
 }
 
@@ -801,30 +807,48 @@ section {
   background-color: rgba(208, 235, 160, 0.644) ;
   margin: 30px;
   border-radius: 100px;
-
-
  }
-.software-features .box{
-  padding: 30px;
-  text-align: center;
- 
-}
-.software-features .features {
-  height: 60px;
-}
-.software-features h3{
-  color: black;
-  font-size: 25px;
-  font-weight: 600;
-  margin: 10px;
-}
 
-.software-features p{
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-}
-.software-features .main_image{
-  width: 105px;
-  height: 89px;
+ .software-features .box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .software-features p{
+   padding: 10px;
+   margin: 10px;
+ }
+ .software-features h3{
+   padding: 10px;
+   margin: 10px;
+ }
+ .software-features img{
+   margin: 10px;
+ }
+@media screen and (max-width: 768px) {
+  .software-features .box{
+    padding: 0px;
+    text-align: center;
+    display: block;
+
+  }
+  .software-features .features {
+    height: 60px;
+  }
+  .software-features h3{
+    color: var(--dark-color);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+  }
+  
+  .software-features p{
+    color: var(--light-color);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .software-features .main_image{
+    width: 105px;
+    height: 89px;
+  }
 }
