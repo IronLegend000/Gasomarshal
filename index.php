@@ -504,9 +504,9 @@
 
             <select class="selectpicker form-group" data-width="100%"  title="Asunto">
               <option>Facturación</option>
-              <option>Facturación</option>
-              <option>Facturación</option>
-
+              <option>Información del Software</option>
+              <option>Información del Hardware</option>
+              <option>Asistencia téncica</option>
             </select>
             
             <div class="form-group">
