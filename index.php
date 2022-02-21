@@ -53,6 +53,7 @@
           <li><a class="nav-link scrollto active" href="#header">Home</a></li>
           <li><a class="nav-link scrollto" href="#">Facturación</a></li>
           <li><a class="nav-link scrollto" href="#clients">Clientes</a></li>
+          <li><a class="nav-link scrollto" href="#allies">Aliados</a></li>
           <li><a class="nav-link scrollto " href="#">Software</a></li>
           <li><a class="nav-link scrollto" href="#services">Hardware</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
@@ -302,7 +303,7 @@
 
 
   <!--Allies sections -->
-  <section class="allies">
+  <section id="allies"class="allies">
     <div class="container" data-aos="fade-up">
       <div class="row">
         <div class="title">
