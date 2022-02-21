@@ -54,7 +54,7 @@
           <li><a class="nav-link scrollto" href="#">Facturación</a></li>
           <li><a class="nav-link scrollto" href="#clients">Clientes</a></li>
           <li><a class="nav-link scrollto" href="#allies">Aliados</a></li>
-          <li><a class="nav-link scrollto " href="#">Software</a></li>
+          <li><a class="nav-link scrollto " href="#software">Software</a></li>
           <li><a class="nav-link scrollto" href="#services">Hardware</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
         </ul>
@@ -217,7 +217,7 @@
   </section><!-- End Services Section -->
 
   <!--Software sections-->
-  <section id="services" class="software">
+  <section id="software" class="software">
     <div class="container">
       <img src="assets/img/software/Group 17.png" class="img" alt="" srcset="">
       <div class="row">
@@ -502,16 +502,9 @@
             <div class="form-group">
               <input type="tel" class="form-control" name="telephone" id="telephone" placeholder="Telefóno" required>
             </div>
-
-            <select class="selectpicker form-group" data-width="100%"  title="Asunto">
-              <option>Facturación</option>
-              <option>Información del Software</option>
-              <option>Información del Hardware</option>
-              <option>Asistencia téncica</option>
-            </select>
             
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" placeholder="Déjanos tu mensaje"
+              <textarea class="forcontrol" name="message" rows="5" placeholder="Déjanos tu mensaje"
                 required></textarea>
             </div>
 
