@@ -314,12 +314,16 @@
         </div>
         <div class="col-lg-12 col-md-12 d-flex align-items-center justify-content-center">
           <div class="box">
+            <a href="https://plenumsoft.com.mx/">
             <img src="assets/img/allies/plenumsoft.png" class="img-fluid" alt="">
+            </a>
           </div>
         </div>
         <div class="col-lg-12 col-md-12 d-flex align-items-center justify-content-center">
           <div class="box">
+            <a href="https://www.fafnir.com/">
             <img src="assets/img/allies/Layer 2.png" class="img-fluid" alt="">
+            </a>
           </div>
         </div>
         <div class="col-lg-12 col-md-12 d-flex align-items-center justify-content-center ">
@@ -331,7 +335,8 @@
         </div>
         <div class="col-lg-12 col-md-12 d-flex align-items-center justify-content-center">
           <div class="box">
-            <img src="assets/img/allies/gosmo.png" class="img-fluid" alt="">
+            <a href="https://swit.com.mx/"></a>
+            <img src="assets/img/allies/swift.jpg" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -506,8 +511,7 @@
             </div>
             
             <div class="form-group">
-              <textarea class="forcontrol" name="message" rows="5" placeholder="Déjanos tu mensaje"
-                required></textarea>
+              <textarea class="forcontrol" name="message" rows="5" placeholder="Déjanos tu mensaje" required></textarea>
             </div>
 
 
