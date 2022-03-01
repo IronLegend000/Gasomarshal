@@ -51,10 +51,10 @@
 
           <li><a class="nav-link scrollto active" href="#header">Home</a></li>
           <li><a class="nav-link scrollto" href="http://facturaweb.gasomarshal.biz:8080/#/">Facturación</a></li>
-          <li><a class="nav-link scrollto" href="#clients">Clientes</a></li>
-          <li><a class="nav-link scrollto" href="#allies">Aliados</a></li>
-          <li><a class="nav-link scrollto " href="#software">Software</a></li>
           <li><a class="nav-link scrollto" href="#services">Hardware</a></li>
+          <li><a class="nav-link scrollto " href="#software">Software</a></li>
+          <li><a class="nav-link scrollto" href="#allies">Aliados</a></li>
+          <li><a class="nav-link scrollto" href="#clients">Clientes</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contáctanos</a></li>
         </ul>
 
