@@ -85,7 +85,8 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-caption">
-          <p>Conoce nuestro catálogo de productos de hardware.</p>
+          <p>Sobreviven con propinas </p>
+          <p>Padecen despachadores de combustible precariedad laboral, sin sueldo y prácticamente nadie tiene seguridad social.</p>
         </div>
         <img class="d-block w-100" src="assets/img/hero/gas.jpg" height="600px" alt="Second slide">
       </div>
