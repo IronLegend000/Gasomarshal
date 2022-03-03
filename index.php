@@ -102,8 +102,10 @@
       </div>
       <div class="carousel-item">
         <div class="carousel-caption">
-          <p>Incorporamos asistencia técnica para nuetros clientes.</p>
-        </div>
+          <p>Futuro de las gasolineras </p>
+          <p>Las gasolineras se convertirán en grandes centros logísticos de gestión de pedidos online.</p>
+
+      </div>
         <img class="d-block w-100" src="assets/img/hero/office space.jpg" height="600px" alt="Fourth slide">
       </div>
       <div class="carousel-item">
