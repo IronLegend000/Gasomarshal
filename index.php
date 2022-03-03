@@ -479,7 +479,7 @@
           <div class="info-box  mb-4">
             <i class="bx bx-envelope"></i>
             <h3>Email </h3>
-            <p> ventas@gasomarshal.com</p>
+            <p>ventas@gasomarshal.com</p>
           </div>
         </div>
 
@@ -487,7 +487,7 @@
           <div class="info-box  mb-4">
             <i class="bx bx-phone-call"></i>
             <h3>Llámanos</h3>
-            <p>+1 999 999 9999</p>
+            <p>+52 (999) 195 2497</p>
           </div>
         </div>
       </div>
