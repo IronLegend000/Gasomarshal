@@ -538,13 +538,14 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <a href="index.html" class="logo"><img src="logo.png" alt="" width="200px"></a>
             <p>
-              Dirreción <br>
+              Direción <br>
               <strong>Telefóno:</strong> +52 (999) 195 2497<br>
               <strong>Email:</strong> atencionaclientes@gasomarshal.com<br>
             </p>
             <p>
-              Ventas: <br>
-              <strong> ventas@gasomarshal.com</strong>+52 (999) 195 2497
+            Ventas
+            <strong>Telefóno:</strong>+52 (999) 195 2497
+            <strong>Email: </strong>  ventas@gasomarshal.com
           </p>
           </div>
 
