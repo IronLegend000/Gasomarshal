@@ -543,8 +543,8 @@
               <strong>Email:</strong> atencionaclientes@gasomarshal.com<br>
             </p>
             <p>
-            Ventas
-            <strong>Telefóno:</strong>+52 (999) 195 2497
+            Ventas <br>
+            <strong>Telefóno:</strong>+52 (999) 195 2497 <br>
             <strong>Email: </strong>  ventas@gasomarshal.com
           </p>
           </div>
